@@ -94,7 +94,13 @@ nav .close {
   /* margin-bottom: 20px; */
   /* float: inline-end; */
 }
-nav .menu i{
+nav .close i{
+  font-size: 26px;
+  color: var(--secondary);
+  font-weight: 600;
+  cursor: pointer;
+}
+nav .menu i {
   font-size: 26px;
   color: var(--nav);
   font-weight: 600;
@@ -118,7 +124,7 @@ nav .menu i{
   height: 90lvh;
   z-index: 2;
   opacity: 1;
-  background: linear-gradient(180deg, rgba(8, 8, 8, 0.788), var(--secondary));
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.788), #a3883686);
 }
 .wrapper {
   width: 300%;
@@ -164,13 +170,13 @@ nav .menu i{
   /* height: 100%; */
 }
 .slider .img:nth-child(1) {
-  background: url("../Images/banner1.jpg");
+  background: url("../Images/tick2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slider .img:nth-child(2) {
-  background: url("../Images/banner2.jpg");
+  background: url("../Images/xie-lipton-0GTahfxilog-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,6 +258,7 @@ nav .menu i{
 }
 .ticket_holder {
   display: grid;
+  /* border: 1px solid red; */
   /* flex-direction: column; */
   grid-template-columns: repeat(3, 1fr);
   /* place-content: center; */
@@ -262,6 +269,7 @@ nav .menu i{
   display: flex;
   flex-direction: column;
   padding: 10px;
+  /* border: 1px solid; */
   /* gap: 10px; */
   /* place-content: center; */
 }
@@ -444,7 +452,9 @@ button:hover {
   height: 100vh;
 }
 .login .inner:nth-child(1) {
-  background: var(--secondary);
+  /* background: var(--secondary); */
+  background: #e3e3e4;
+  /* border-right: 1px solid #3046c02d; */
 }
 .login .formbold-input-flex > div {
   width: 100%;
