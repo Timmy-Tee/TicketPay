@@ -46,6 +46,7 @@
   /* font-family: rubik; */
   scroll-behavior: smooth;
   text-decoration: none;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -78,6 +79,25 @@ nav ul li a {
 }
 nav ul li a:hover {
   background: var(--accent);
+}
+nav .menu {
+  display: none;
+  cursor: pointer;
+}
+nav .close {
+  display: none;
+  position: relative;
+  width: 90%;
+  justify-content: end;
+  padding: 10px;
+  /* right: -120px; */
+  /* margin-bottom: 20px; */
+  /* float: inline-end; */
+}
+nav .menu i{
+  font-size: 26px;
+  color: var(--nav);
+  font-weight: 600;
 }
 /* Nav Section */
 
@@ -212,7 +232,7 @@ nav ul li a:hover {
   padding: 60px;
   flex-direction: column;
   place-content: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   /* align-items: center; */
 }
 .about #about_header {
@@ -225,7 +245,7 @@ nav ul li a:hover {
 /* About Us */
 
 /* Ticket  */
-.ticketing{
+.ticketing {
   display: flex;
   flex-direction: column;
   padding: 60px;
@@ -298,14 +318,16 @@ nav ul li a:hover {
   display: grid;
   place-content: center;
 }
-.submit a, button{
+.submit a,
+button {
   border: 1px solid;
   padding: 15px 50px;
   transition: 0.4s ease-in-out;
   color: var(--text);
   cursor: pointer;
 }
-.submit a:hover, button:hover {
+.submit a:hover,
+button:hover {
   background: var(--accent);
   color: var(--nav);
 }
@@ -413,17 +435,15 @@ nav ul li a:hover {
 }
 /* Contact Us */
 
-
-
 /* Login */
-.login{
+.login {
   display: flex;
   /* border: 1px solid; */
   display: flex;
   place-content: center;
   height: 100vh;
 }
-.login .inner:nth-child(1){
+.login .inner:nth-child(1) {
   background: var(--secondary);
 }
 .login .formbold-input-flex > div {
@@ -435,11 +455,11 @@ nav ul li a:hover {
   /* border: 1px solid red; */
   padding: 0px;
 }
-#login a{
+#login a {
   width: 100%;
   text-align: center;
 }
-.form_text h1{
+.form_text h1 {
   font-family: var(--poppins);
   text-align: center;
   font-size: 40px;
@@ -449,7 +469,7 @@ nav ul li a:hover {
 /* Login */
 
 /* Pay */
-.pay{
+.pay {
   display: flex;
   height: 100vh;
   place-content: center;
@@ -471,6 +491,7 @@ nav ul li a:hover {
 
 .footer ul li {
   display: inline;
+  /* border: 1px solid;; */
 }
 .footer ul li a {
   color: var(--text);

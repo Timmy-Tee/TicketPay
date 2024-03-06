@@ -1,71 +1,140 @@
-@media (max-width: 1020px){
-    .ticket_holder {
-        grid-template-columns: repeat(2, 1fr);
-      }
+@media (max-width: 1020px) {
+  .ticket_holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+@media (max-width: 950px) {
+  .nav ul {
+    /* display: none; */
+  }
+  .nav_link {
+    display: none;
+    flex-direction: column;
+    place-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100vh;
+    background: var(--background);
+    /* place-content: center; */
+    align-items: center;
+    transform: 0.5s ease-in;
+  }
 
-@media (max-width: 950px){
-    .nav ul{
-        display: none;
+  @keyframes slide_in {
+    from {
+      width: 0%;
     }
-    .ticket_holder {
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-      }
-      .contact, .login{
-        flex-direction: column;
-      }
-      .contact .inner:nth-child(1), .login .inner:nth-child(1){
-        display: none;
-      }
-      .contact .inner:nth-child(2){
-        /* padding: 50px; */
-      }
-      .formbold-form-wrapper {
-        width: 100%;
-        max-width: 100%;
+    to {
+      width: 70%;
     }
-    .formbold-input-flex {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .formbold-input-flex > div {
-        width: 100%;
-      }
+  }
 
-      .pay .inner{
-        /* border: 1px solid; */
-        flex-basis: 100%;
-        padding: 15px;
-      }
-      
-    
+  @keyframes slideOut {
+    from {
+      width: 70%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+  .nav_link ul {
+    /* border: 1px solid; */
+    width: 100%;
+  }
+  .nav_link ul li {
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .nav_link ul li a {
+    border-bottom: 1px solid;
+    width: 100%;
+    color: var(--text);
+    padding: 20px;
+    /* text-align: center; */
+  }
+  .nav_link ul li a:hover {
+    color: var(--nav);
+  }
+
+  nav .menu,
+  nav .close {
+    display: flex;
+  }
+
+  .ticket_holder {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .contact,
+  .login {
+    flex-direction: column;
+  }
+  .contact .inner:nth-child(1),
+  .login .inner:nth-child(1) {
+    display: none;
+  }
+  .contact .inner:nth-child(2) {
+    /* padding: 50px; */
+  }
+  .formbold-form-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+  .formbold-input-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .formbold-input-flex > div {
+    width: 100%;
+  }
+
+  .pay .inner {
+    /* border: 1px solid; */
+    flex-basis: 100%;
+    padding: 15px;
+  }
+
+  .footer ul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .footer ul li {
+    padding: 10px;
+  }
 }
 
-
-@media (max-width: 850px){
-    /* .nav ul{
+@media (max-width: 850px) {
+  /* .nav ul{
         display: none;
     } */
-    .ticket_cards{
-        display: grid;
-    }
-    .formbold-main-wrapper {
-        flex-basis: 100%;
-      }
-      
-      .ticketing{
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-      }
-    .ticket_text .details{
-        flex-direction: column;
-    }
-    .form_text h1{
-        font-size: 60px;
-      }
-      
+  .ticket_cards {
+    display: grid;
+  }
+  .formbold-main-wrapper {
+    flex-basis: 100%;
+  }
+
+  .ticketing {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .ticket_text .details {
+    flex-direction: column;
+  }
+  .form_text h1 {
+    font-size: 60px;
+  }
+}
+
+
+@media (max-width: 650px){
+  .footer ul {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
 }
