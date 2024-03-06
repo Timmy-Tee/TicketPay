@@ -29,3 +29,4 @@ close_bar.addEventListener("click", ()=>{
   nav_link.style.width = "0%";
   nav_link.style.display = "none";
 })
+

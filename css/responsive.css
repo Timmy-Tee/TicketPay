@@ -100,7 +100,7 @@
 
   .footer ul {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer ul li {
     padding: 10px;
@@ -124,17 +124,27 @@
     padding: 40px;
   }
   .ticket_text .details {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .form_text h1 {
     font-size: 60px;
   }
 }
 
-
-@media (max-width: 650px){
+@media (max-width: 650px) {
   .footer ul {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .ticket_card .ticket_text {
+    padding: 20px;
+  }
+  .ticket_card .details {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 12px;
   }
 }

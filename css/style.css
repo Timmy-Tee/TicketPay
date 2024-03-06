@@ -94,7 +94,7 @@ nav .close {
   /* margin-bottom: 20px; */
   /* float: inline-end; */
 }
-nav .close i{
+nav .close i {
   font-size: 26px;
   color: var(--secondary);
   font-weight: 600;
@@ -269,6 +269,7 @@ nav .menu i {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  cursor: pointer;
   /* border: 1px solid; */
   /* gap: 10px; */
   /* place-content: center; */
@@ -303,6 +304,7 @@ nav .menu i {
 .ticket_text .details {
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid; */
 }
 .ticket_text h2 {
   color: var(--accent);
@@ -338,6 +340,9 @@ button {
 button:hover {
   background: var(--accent);
   color: var(--nav);
+}
+#main_ticket .img_holder {
+  flex-basis: 100%;
 }
 /* Ticket  */
 
